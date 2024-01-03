@@ -22,8 +22,12 @@ nav.menu-lateral {
   overflow: hidden;
   transition: 0.5s;
 }
-nav.menu-lateral:hover {
-  width: 300px;
+nav.menu-lateral.expandir { /*CLASS CRIADA NO JS*/
+  width: 260px;
+}
+nav.menu-lateral.expandir .text-link {
+  margin-left: 20px;
+  opacity: 1;
 }
 
 .btn-expandir {
@@ -32,9 +36,9 @@ nav.menu-lateral:hover {
 }
 .btn-expandir i {
   color: white;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
-  padding-left: 5%;
+  margin-left: 7%;
 }
 
 ul {
@@ -59,6 +63,14 @@ ul .item-menu a .icon {
   font-size: 30px;
   margin-left: 8px;
 }
+ul .item-menu a .text-link {
+  margin-left: 70px;
+  transition: 0.8s;
+  opacity: 0;
+}
 ul .item-menu:hover {
+  background-color: #ff0077;
+}
+ul .ativo { /*CLASSE CRIADA PELO JS*/
   background-color: #ff0077;
 }/*# sourceMappingURL=style.css.map */
