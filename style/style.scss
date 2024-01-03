@@ -86,3 +86,47 @@ ul {
         background-color: #ff0077;
     }
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 80px;
+
+    @media screen and (max-width: 768px) {
+        align-items: center;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    max-width: 350px;
+    border: 2px solid #ff0077;
+    border-radius: 10px;
+    background-color: #202020;
+    color: white;
+    padding: 10px;
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    .btn-card {
+        margin-top: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #ff0077;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+}
